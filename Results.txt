@@ -1,0 +1,73 @@
+//	Project #5: 12/03/18
+//	Student: Raul Gonzalez ; SMC ID: 1630082
+
+			---- COMPARISON OF DIFFERENT SORTING ALGORITHMS ----
+
+			
+For this emperical study four different sorting algorithms were compared. 
+These were: Selection sort, Bubble sort, Insert sort, and Merge sort.
+
+Each algorithm was asked to sort an array filled with random interger values.
+The length of the array was 15000 entries long, while the random values were 
+kept in the range of 0 to 1000. 
+
+To improve the consistency of the results, a single random array was generated
+and each algorithm was asked to sort it. The execution time of each algorithm 
+was then recorded and stored.
+
+By doing so, a fairer comparison could be made between the algorithms as they 
+would sort the same array. Any differences in the excution time could then be
+atritubed to the algorithms themselves rather than due to favorable or unfavorable
+input arrays. 
+
+Once this sequence of testing was complete, the entire process was then repeated with 
+a newly generated random array. This larger event was then  repeated 20 times. 
+
+
+The results of the twenty seperate tests show a definite trend when average times are 
+analyised: 
+	
+	1) On the whole, Merge sort was the fastest of all the algorithms. With an	
+	average execution time an order of magnitude lower than all other sorts, it
+	dominated in terms of performance. In all likelihood this is due to it not 
+	wasting time repeatedly scanning and comparing entries it already visited.
+	
+	2) Bubble sort was by far the slowest of all algorithms. On average it took
+	almost twice as long as the next slowest algorithm. As it only compares adjacent
+	array entries, it has no way of identifying more distant entries that could be 
+	compared and swapped. Consequently it performs many unnecesary swaps that do little
+	sorting.
+	
+	3) Selection sort was the second slowest algorithm. While it does not execute as 
+	many trivial swaps as Bubble sort, it still leaves the array mostly unchanged after
+	it performs a swap. This means the time it spends scanning the array does nothing to
+	sort it. Naturally this leads to more scans, swaps, and excution time. 
+	
+	4) Insertion sort was the second fastest algorithm. While nowhere near as fast as 
+	merge sort, it still outperformed the other algorithms by a large margin. This can 
+	be atritubed to the way it "slides" the entries of an array as it scans them. This 
+	tends to reduces the number of unnecesary comparisons by biasing EVERY seemingly 
+	larger value towards one side of the array. 
+	
+
+In terms of the variation between excutions of the same algorithm, a different trend is 
+apparent: 
+
+	1) 	Merge sort had a much lower standard deviation than other algorithms. This 
+	means that its execution time varied little with input array. The extent to which 
+	the radom array was ordered had little effect. Apparently there was no "favorable" 
+	input, but likewise no "unfavorable" input.
+	
+	2) Bubble sort had the largest standard deviation. How "sorted" the input array was 
+	had a large effect on the excution time of this algorithm. 
+	
+	3) Selection sort and Insertion sort had similar standard deviations. Between the
+	two, Insertion sort was more sensitive to how "ordered" the input array was, but not
+	by much. In either case, the "sorting" of the input had a significant effect on 
+	excution time.
+	
+Even though merge sort was the fastest and most consistent of all the algorithms, this 
+consistency may be a drawback. If the input array is partially sorted, an atractive quality 
+may be that the sorting algorithm takes less time to complete the sort. If this is important,
+then the slower algorithms may have a quality that is worth studying and replicating.
+
