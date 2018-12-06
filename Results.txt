@@ -4,7 +4,7 @@
 			---- COMPARISON OF DIFFERENT SORTING ALGORITHMS ----
 
 			
-For this emperical study four different sorting algorithms were compared. 
+For this empirical study four different sorting algorithms were compared. 
 These were: Selection sort, Bubble sort, Insert sort, and Merge sort.
 
 Each algorithm was asked to sort an array filled with random interger values.
@@ -25,7 +25,7 @@ a newly generated random array. This larger event was then  repeated 20 times.
 
 
 The results of the twenty seperate tests show a definite trend when average times are 
-analyised: 
+analysed: 
 	
 	1) On the whole, Merge sort was the fastest of all the algorithms. With an	
 	average execution time an order of magnitude lower than all other sorts, it
@@ -53,7 +53,7 @@ analyised:
 In terms of the variation between excutions of the same algorithm, a different trend is 
 apparent: 
 
-	1) 	Merge sort had a much lower standard deviation than other algorithms. This 
+	1) Merge sort had a much lower standard deviation than other algorithms. This 
 	means that its execution time varied little with input array. The extent to which 
 	the radom array was ordered had little effect. Apparently there was no "favorable" 
 	input, but likewise no "unfavorable" input.
